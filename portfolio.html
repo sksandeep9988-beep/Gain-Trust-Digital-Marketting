@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      padding: 15px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    header {
+  position: relative;
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-weight: bold;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Portfolio Items Grid */
+    .portfolio-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    /* Bottom Navigation */
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <span id="backArrow" style="position:absolute; left:15px; font-size:30px; cursor:pointer; font-weight:bold;">←</span>
+  Content Creation
+</header>
+
+<script>
+  document.getElementById('backArrow').addEventListener('click', function() {
+    history.back();
+  });
+</script>
+
+
+
+  <!-- Featured Projects -->
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Project 1">
+        <p>Digital Campaign for Tech Brand</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Project 2">
+        <p>Retail Social Media Launch</p>
+      </div>
+    </div>
+     <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Project 1">
+        <p>Digital Campaign for Tech Brand</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Project 2">
+        <p>Retail Social Media Launch</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Ads Campaigns -->
+  <section>
+    <h2>Google Ads Campaigns</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Google Ads 1">
+        <p>Search Ads for E-commerce</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Google Ads 2">
+        <p>Display Network Campaign</p>
+      </div>
+    </div>
+     <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Google Ads 1">
+        <p>Search Ads for E-commerce</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Google Ads 2">
+        <p>Display Network Campaign</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meta Ads Campaigns -->
+  <section>
+    <h2>Meta Ads Campaigns</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Meta Ads 1">
+        <p>Targeted Audience Engagement</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Meta Ads 2">
+        <p>Brand Awareness Campaign</p>
+      </div>
+    </div>
+     <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Meta Ads 1">
+        <p>Targeted Audience Engagement</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Meta Ads 2">
+        <p>Brand Awareness Campaign</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Campaigns -->
+  <section>
+    <h2>Social Media Campaigns</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Social Media 1">
+        <p>Client A: Increased Engagement</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Social Media 2">
+        <p>Client B: Boosted Awareness</p>
+      </div>
+    </div>
+     <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Social Media 1">
+        <p>Client A: Increased Engagement</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Social Media 2">
+        <p>Client B: Boosted Awareness</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Marketing -->
+  <section>
+    <h2>Email Marketing</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Email 1">
+        <p>B2B Lead Campaign</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Email 2">
+        <p>B2C Email Campaign</p>
+      </div>
+    </div>
+     <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Email 1">
+        <p>B2B Lead Campaign</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/150" alt="Email 2">
+        <p>B2C Email Campaign</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Nav -->
+  <nav>
+    <a href="#">🏠<br>Home</a>
+    <a href="#">🛠️<br>Services</a>
+    <a href="#">📂<br>Portfolio</a>
+    <a href="#">📞<br>Contact</a>
+  </nav>
+
+</body>
+</html>

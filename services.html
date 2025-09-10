@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Arial, sans-serif;background:#f9f9f9;color:#333;line-height:1.6;}
+    
+    /* Hero */
+    .hero{position:relative;padding:15px 0 0;}
+    .hero .flex{position:relative;display:flex;justify-content:center;align-items:center;}
+    .hero .back{position:absolute;top:0;left:0;font-size:30px;cursor:pointer;font-weight:bolder;padding:10px 15px;text-decoration:none;color:#111;}
+    .hero h2{text-align:center;width:100%;margin:0;}
+    .hero img{width:100%;max-height:350px;object-fit:contain;border-radius:12px;}
+    
+    .container{max-width:1200px;margin:auto;padding:20px;}
+    h2{margin:20px 0 10px;font-size:2rem;color:#111;}
+    h3{margin:20px 0 10px;font-size:1.3rem;color:#222;}
+    p{margin-bottom:15px;}
+    
+    /* Services */
+    .service-buttons{display:flex;flex-wrap:wrap;gap:15px;}
+    .service-buttons button{flex:1 1 calc(50% - 15px);padding:12px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;font-size:1rem;transition:.3s;}
+    .service-buttons button:hover{background:#f1f1f1;}
+    .service-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-buttons .row {
+  display: flex;
+  gap: 12px;
+}
+
+.service-buttons .row a {
+  flex: 1; /* equal width */
+}
+
+.service-buttons .row.full a {
+  flex: 1 1 100%; /* full width */
+}
+.service-buttons button {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+    
+    @media(max-width:768px){.service-buttons button{flex:1 1 100%;}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="flex">
+        <a href="javascript:history.back()" class="back">←</a>
+        <h2>Services</h2>
+      </div>
+      <img src="our services img.jpg" alt="Services">
+    </div>
+
+    <h2>What We Offer</h2>
+    <p>We provide a wide range of creative and marketing services to help businesses grow and connect with their audience.</p>
+    
+<div class="service-buttons">
+  <div class="row">
+    <a href="services,content-creation.html"><button>✍️ Content Writing</button></a>
+    <a href="services,video-production.html"><button>🎥 Video Production</button></a>
+  </div>
+  <div class="row">
+    <a href="services,google-ads.html"><button>🔍 Google Ads</button></a>
+    <a href="services,social-media-marketing.html"><button>📢 Social Media Marketing</button></a>
+  </div>
+  <div class="row full">
+    <a href="services,meta-ads.html"><button>📊 Meta Ads</button></a>
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Creation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+  header {
+  position: relative;           /* Absolute positioning ke liye */
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* Center text horizontally */
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 30px;
+  min-height: 40px;             /* Consistent height if needed */
+}
+
+header span {
+  position: absolute;
+  left: 15px;                   /* Arrow ka left spacing */
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+  /* margin-left hata do */
+}
+
+
+    .hero img {
+        width: 80%;        /* screen se thoda chhota (aap 85% / 80% bhi kar sakte ho) */
+        height: auto;      /* proportion maintain rahega, image kabhi nahi phategi */
+        display: block;    /* center align karne ke liye */
+        margin: 0 auto;    /* center me image aayegi */
+        border-radius: 10px; /* optional: thoda rounded corner dikhana ho to */
+       
+        max-height: 70vh;    /* screen ki height ke 70% tak hi image aayegi */
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Services Section */
+    .services {
+      margin-bottom: 30px;
+    }
+
+    .services h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .service-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .service-buttons button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    /* Case Studies */
+    .case-studies {
+      margin-bottom: 30px;
+    }
+
+    .case-studies h3 {
+      font-size: 22px;
+      margin-bottom: 19px;
+    }
+
+    .case-list {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .case-card {
+      flex: 0 0 200px;
+      background: #adc9ee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .case-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .case-text {
+      padding: 12px;
+    }
+
+    .case-text h4 {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .case-text p {
+      font-size: 12px;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Bottom Nav */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+
+    .bottom-nav a {
+      text-align: center;
+      font-size: 12px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span id="backArrow" style="position:absolute; left:15px; font-size:30px; cursor:pointer; font-weight:bold;">←</span>
+  Content Creation
+</header>
+
+<script>
+  document.getElementById('backArrow').addEventListener('click', function() {
+    history.back();
+  });
+</script>
+
+  <div class="hero">
+    <img src="content creation.jpg" alt="Content Creation Banner">
+  </div>
+
+  <div class="content">
+    <h2>Crafting Compelling Content</h2>
+    <p>
+      We specialize in creating high-quality, engaging content that resonates with your target audience. 
+      From blog posts to social media updates, we’ve got you covered.
+    </p><br>
+
+    <!-- Services Section -->
+   <div class="services">
+  <h3>Our Services</h3>
+  <div class="service-buttons">
+    ✍️ Blog Posts & Articles <br> <br>
+    📊 Infographics & Visuals <br><br>
+    🎥 Video Production <br><br>
+    📢 Social Media Content <br><br>
+  </div>
+</div>
+
+    <!-- Case Studies -->
+    <div class="case-studies">
+      <h3>Case Studies</h3>
+      <div class="case-list">
+        <div class="case-card">
+          <img src="sales increase.webp" alt="Case A">
+          <div class="case-text">
+            <h4>Client A: Increased Engagement</h4>
+            <p>See how we helped Client A achieve a 20% increase in engagement.</p>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="branding image.jpg" alt="Case B">
+          <div class="case-text">
+            <h4>Client B: Boost Awareness</h4>
+            <p>Discover how our content boosted Client B’s brand awareness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="#">🏠<br>Home</a>
+    <a href="#">🛠<br>Services</a>
+    <a href="#">📁<br>Portfolio</a>
+    <a href="#">✉️<br>Contact</a>
+  </div>
+
+</body>
+</html>

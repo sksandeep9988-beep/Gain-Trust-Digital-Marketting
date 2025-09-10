@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editing & Production</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header (same as Content Creation wala) */
+    header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;   /* Title center mein */
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+      font-size: 30px;
+      min-height: 40px;
+      background: #fff;
+    }
+
+    header span {
+      position: absolute;
+      left: 15px;
+      font-size: 30px;
+      cursor: pointer;
+      font-weight: bolder;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Header Image */
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 2rem;
+      color: #111;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 1.3rem;
+      color: #222;
+    }
+
+    /* Services */
+    .service-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .service-buttons button {
+      flex: 1 1 calc(50% - 15px);
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: 0.3s;
+    }
+
+    .service-buttons button:hover {
+      background: #f1f1f1;
+    }
+
+    .social-btn {
+      background: linear-gradient(45deg, #E1306C, #F77737);
+      color: #fff;
+      border: none;
+    }
+
+    /* Process */
+    .process ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .process li {
+      margin: 10px 0;
+      padding-left: 28px;
+      position: relative;
+      font-size: 1rem;
+    }
+
+    .process li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #1877f2;
+    }
+
+    /* Portfolio */
+    .portfolio-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .portfolio-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .portfolio-item:hover {
+      background: #f1f1f1;
+    }
+
+    /* Responsive Text */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+      .service-buttons button {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <span id="backArrow">←</span>
+    Video Editing
+  </header>
+
+  <script>
+    document.getElementById('backArrow').addEventListener('click', function() {
+      history.back();
+    });
+  </script>
+
+  <div class="container">
+    <!-- Hero Image -->
+    <div class="hero">
+      <img src="video editing img.jpg" alt="Video Editing">
+    </div>
+
+    <!-- Title & Text -->
+    <h2>Crafting Compelling Visual Narratives</h2>
+    <p>
+      Our video editing and production services transform raw footage into captivating stories. 
+      We specialize in creating high-quality videos that resonate with your audience and achieve your marketing goals.
+    </p><br>
+
+    <!-- Services -->
+    <div class="services">
+      <h3>Our Video Services</h3>
+      <div class="service-buttons">
+        📺 Promotional Videos <br><br>
+        💼 Corporate Videos<br><br>
+        📢 Social Media Content<br><br>
+      </div>
+    </div>
+
+    <!-- Process -->
+    <div class="process">
+      <h3>The Production Process</h3>
+      <ul>
+        <li>Concept Development</li>
+        <li>Filming & Production</li>
+        <li>Editing & Post-Production</li>
+        <li>Delivery & Feedback</li>
+      </ul>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio">
+      <h3>Portfolio</h3>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <strong>Corporate Video</strong><br>
+          Showcasing company culture
+        </div>
+        <div class="portfolio-item">
+          <strong>Product Demo</strong><br>
+          Highlighting product features
+        </div>
+      </div>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <strong>Corporate Video</strong><br>
+          Showcasing company culture
+        </div>
+        <div class="portfolio-item">
+          <strong>Product Demo</strong><br>
+          Highlighting product features
+        </div>
+      </div>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <strong>Corporate Video</strong><br>
+          Showcasing company culture
+        </div>
+        <div class="portfolio-item">
+          <strong>Product Demo</strong><br>
+          Highlighting product features
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

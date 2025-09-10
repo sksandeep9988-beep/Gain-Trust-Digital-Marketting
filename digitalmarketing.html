@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>digitalmarketing - Gain Trust</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+header {
+  position: relative;          /* Relative for absolute positioning */
+  display: flex;
+  align-items: center;
+  justify-content: center;     /* Center the h1 horizontally */
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  min-height: 50px;            /* Optional for consistent height */
+}
+
+header .back {
+  position: absolute;
+  left: 15px;                  /* Arrow fixed from left */
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-right: 0;             /* Remove margin-right */
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+    /* Section spacing */
+    section {
+      padding: 20px;
+    }
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    /* Subheadings */
+    .subheading {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 15px 0 8px 0;
+      color: #000;
+    }
+
+    /* Case Study Section */
+    .case-study {
+      margin-top: 20px;
+    }
+
+    .case-study h2 {
+      margin-bottom: 15px;
+    }
+
+    .case-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .case-card-content {
+      padding: 15px;
+    }
+
+    .case-card-content h4 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .case-card-content p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+/* ✅ Full screen wali image ke liye */
+.fullscreen-image {
+  width: 100vw;        /* poori screen ki width lega */
+  height: 100vh;       /* poori screen ki height lega */
+  object-fit: contain; /* pura image dikhayega (crop nahi hoga) */
+  background: #fff;
+  display: block;
+}
+
+/* ✅ Normal case study images ke liye */
+.case-card img {
+  width: 100%;         /* card ke andar fit hoga */
+  height: auto;        /* original ratio maintain karega */
+  object-fit: cover;   /* thoda crop ho sakta hai, lekin clean lagega */
+  display: block;
+}
+
+
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      font-size: 13px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      background: #fff;
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .btn-dark {
+      background: #000;
+      color: #fff;
+      border: none;
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+
+    .bottom-nav a {
+      text-decoration: none;
+      color: #444;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .bottom-nav a.active {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .bottom-nav span {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <span id="backArrow" style="position:absolute; left:15px; font-size:30px; cursor:pointer; font-weight:bold;">←</span>
+  Digital Marketing
+</header>
+
+<script>
+  document.getElementById('backArrow').addEventListener('click', function() {
+    history.back();
+  });
+</script>
+
+  </header>
+
+  <!-- Services Section -->
+  <section>
+    <h2>Our Services</h2>
+    <p>We offer a comprehensive suite of digital marketing services designed to elevate your brand and drive measurable results. Our team of experts combines creativity with data-driven strategies to deliver impactful campaigns.</p>
+
+    <div class="subheading">Pay-Per-Click (PPC) Advertising</div>
+    <p>Maximize your ROI with targeted PPC campaigns. We manage your ad spend across platforms like Google Ads, ensuring your message reaches the right audience at the right time.</p>
+
+    <div class="subheading">Social Media Marketing</div>
+    <p>Engage your audience and build brand loyalty through strategic social media marketing. We create compelling content, manage your profiles, and run targeted ad campaigns.</p>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section class="case-study">
+    <h2>Client Success Stories</h2>
+
+    <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="junglebridge.jpg" alt="Case Study 1">
+    </div>
+
+   
+      
+    </div>
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+   
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+    
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+   
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+   
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+    
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+   
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+    
+      <div class="case-card">
+      <div class="case-card-content">
+        <h4>Client Testimonial</h4>
+        <p><strong>Increased Website Traffic by 40%</strong></p>
+        <p>Working with the agency transformed our online presence. Their data-driven strategies boosted engagement and brand visibility significantly.</p>
+        <a href="#" class="btn">Read More →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400" alt="Case Study 1">
+    </div>
+
+    
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="#"><span>🏠</span>Home</a>
+    <a href="#" class="active"><span>🛠</span>Services</a>
+    <a href="#"><span>📂</span>Portfolio</a>
+    <a href="#"><span>📞</span>Contact</a>
+  </div>
+
+</body>
+</html>
